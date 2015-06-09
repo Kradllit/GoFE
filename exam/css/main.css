@@ -44,7 +44,7 @@ body {
 }
 
 .facebook, .google, .twitter
-{ display: inline-block; background: url('img/connect.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+{ display: inline-block; background: url('../img/connect.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
  
 .facebook { background-position: -5px -0px; width: 22px; height: 21px; }
 .google { background-position: -5px -26px; width: 22px; height: 21px; }
@@ -59,7 +59,7 @@ body {
 
 .main_walpapper {
     width: 100%;
-    background: url(img/walpapper.png) #2980b9;
+    background: url(../img/walpapper.png) #2980b9;
     height: 351px; 
     background-size: cover;
 }
@@ -93,6 +93,11 @@ body {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+.wrapper::after {
+    content: " ";
+    clear: both;
 }
 
 .header_connect {
@@ -242,7 +247,7 @@ footer {
     color: #333333;
     line-height: 1.538;
     text-align: left;
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 
@@ -280,7 +285,7 @@ footer {
 .get_started a::after {
     content: " ";
     display: inline-block;
-    background: url(img/arrow.png);
+    background: url(../img/arrow.png);
     height: 32px;
     width: 32px;
     position: relative;
@@ -289,36 +294,36 @@ footer {
 }
 
 .reviews_slider_photo {
-    background: url(img/amanda.png) no-repeat;
-    float: right;
+    background: url(../img/amanda.png) no-repeat;
     z-index: 1;
     height: 364px;
     width: 225px;
-    position: relative;
-    top: -106px;
+    float: right;
 }
 
 
 blockquote {
-    quotes: "\201C""\201D""\2018""\2019";
     margin: 0 300px 0 0;
     
 }
-blockquote::before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
 
+blockquote::before {
+    content: " ";
+    background-color: green;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: 25px;
 }
 
 blockquote::after {
-  color: #ccc;
-    content: close-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 20px;
-
+    content: " ";
+    background-color: green;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: 20px;
+    float: right;
 }
 
 blockquote p {
@@ -326,7 +331,8 @@ blockquote p {
 }
 
 .reviews_slider cite {
-    margin-left: 300px;
+    display: block;
+    text-align: right;
 }
 
 .footer_title {
@@ -366,7 +372,7 @@ blockquote p {
 
 
 .footer_title::before {
-    content: url(img/logo.png);
+    content: url(../img/logo.png);
     height: 47px;
     width: 47px;
     display: none;
