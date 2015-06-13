@@ -90,7 +90,7 @@ body {
 }
 
 .wrapper {
-    max-width: 960px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -149,8 +149,9 @@ body {
   color: #333333;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 2.8;
   text-align: left;
+  padding: 40px 400px 0 0;
+
 }
 
 .main_description p {
@@ -158,21 +159,21 @@ body {
     color: #333333;
     text-align: left;
     line-height: 1.538;
-    padding-right: 400px;
+    padding: 25px 400px 0 0;
     
 }
 
-.registration_form legend {
-  font-size: 25px;
+.registration_form h2 {
+  font-size: 30px;
   color: #333333;
   text-transform: uppercase;
-  line-height: 0.8;
   text-align: center;
-    padding: 25px 0 25px 0;
+  padding: 25px 0 25px 0;
 }
 .oportunites_element {
     width: 290px;
 }
+
 
 .oportunites_list h1{
     font-size: 25px;
@@ -189,15 +190,15 @@ body {
     height: 159px;
 }
 
+.oportunites_list ul {
+    text-align: center;
+    margin: 0 -40px;
+}
+
 .oportunites_list ul li {
     display: inline-block;
-    margin: 10px 5px 0 5px;
+    margin: 10px 25px;
 }
-
-.oportunites_list ul {
-    text-align: justify;
-}
-
 .oportunites_element figcaption {
     font-size: 15px;
     color: #333333;
@@ -234,12 +235,17 @@ footer {
     background-color: #3498db;
     width: 100%;
     height: 194px;
+    padding-top: 50px;
 }
 
 .reviews_slider {
     width: 100%;
     height: 252px;
+    text-align: right;
+    position: relative;
 }
+
+
 
 .reviews_slider p{
     display: inline-block;
@@ -257,7 +263,25 @@ footer {
   text-transform: uppercase;
   line-height: 1.68;
   text-align: left;
+  display: inline-block;
+  float: left;
 }
+
+.slider_left {
+    background: url(../img/slider-left.png);
+    height: 44px;
+    width: 44px;
+    display: inline-block;
+}
+
+.slider_right {
+    background: url(../img/slider-right.png);
+    height: 44px;
+    width: 44px;
+    display: inline-block;
+}
+        
+
 
 .get_started {
     background-color: #f2f2f2;
@@ -273,23 +297,23 @@ footer {
     color: white;
     border: none;
     font-size: 25px;
-    margin: 50px 0 0 60px;
+    margin: 65px 0 0 0;
     font-size: 25px;
     text-transform: uppercase;
-    line-height: 1.68;
     text-align: left;
-    padding: 7px 0 0 25px;
+    padding: 5px 0 0 25px;
     text-decoration: none;
+    position: relative;
 }
 
 .get_started a::after {
     content: " ";
     display: inline-block;
     background: url(../img/arrow.png);
-    height: 32px;
-    width: 32px;
+    height: 36px;
+    width: 36px;
     position: relative;
-    top: 7px;
+    top: 9px;
     left: 15px;
 }
 
@@ -299,6 +323,8 @@ footer {
     height: 364px;
     width: 225px;
     float: right;
+    position: relative;
+    top: 32px;
 }
 
 
@@ -309,19 +335,19 @@ blockquote {
 
 blockquote::before {
     content: " ";
-    background-color: green;
+    background: url(../img/open-quote.png);
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 19px;
+    height: 14px;
     margin-top: 25px;
 }
 
 blockquote::after {
     content: " ";
-    background-color: green;
+    background: url(../img/close-quote.png);
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 19px;
+    height: 15px;
     margin-top: 20px;
     float: right;
 }
@@ -343,15 +369,15 @@ blockquote p {
     height: 60px;
     width: 260px;
     border-right: 1px solid #2980b9; 
-    margin: 50px 0 0 0;
 }
 
 .footer_connect {
     display: inline-block;
     color: white;
-    width: 450px;
-    vertical-align: bottom;
-    padding-left: 10px;
+    width: 650px;
+    vertical-align: top;
+    padding: 15px 10px;
+
 }
 
 .footer_connect p {
@@ -393,7 +419,7 @@ blockquote p {
 
 
 
-@media (max-width: 940px) {
+@media (max-width: 990px) {
 .oportunites_list ul li {
     display: block;
     }
@@ -441,5 +467,3 @@ blockquote p {
     text-decoration: none; 
     margin: 5px 0 0 5px;
 }
-    
-
